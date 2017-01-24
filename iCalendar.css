@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  font-size: 4vmin;
+}
+
+#app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#details {
+  position: fixed;
+  top: 0px;
+  width: 30%;
+  height: 100%;
+  background: white;
+}
+#details .header {
+  position: absolute;
+  top: 1px;
+  width: 100%;
+  height: calc(11.1vmin - 2px);
+  background-color: #FFF385;
+  text-align: center;
+  line-height: calc(11.1vmin - 2px);
+  font-weight: bold;
+}
+#details .comments {
+  position: absolute;
+  width: 100%;
+  height: calc(11vmin*7);
+  top: calc(11.1vmin + 2px);
+}
+#details .comments textarea {
+  width: 100%;
+  height: 100%;
+}
+#details .footer {
+  position: absolute;
+  width: 100%;
+  height: calc(11.1vmin - 2px);
+  bottom: 1px;
+  background-color: #FFF385;
+}
+
+@media (orientation: portrait) {
+  #details {
+    left: 0px;
+    top: 100vw;
+    width: 100%;
+    height: calc(100% - 100vw);
+  }
+  #details .header {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 1px;
+    background-color: #FFF385;
+    line-height: normal;
+  }
+  #details .header .centeredTextContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 50%;
+    margin-top: -2.5vmin;
+  }
+  #details .header .centeredText {
+    height: 5vmin;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 5vmin;
+    font-weight: bold;
+  }
+  #details .comments {
+    height: 60%;
+    top: 20%;
+  }
+  #details .footer {
+    top: 80%;
+    height: 20%;
+  }
+}
+#calendar {
+  position: fixed;
+  top: 0px;
+  background: white;
+  left: 30%;
+  width: 70%;
+  height: 100%;
+}
+
+@media (orientation: portrait) {
+  #calendar {
+    left: 0px;
+    width: 100%;
+    height: 100vw;
+  }
+}
+.button {
+  position: absolute;
+  width: 25vmin;
+  height: 4vmin;
+  padding: 1vmin;
+  border-radius: 2vmin;
+  top: 50%;
+  margin-top: calc(-5vmin/2);
+  font-size: 4vmin;
+  vertical-align: baseline;
+  color: #FFF;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#3592c1), to(#a7e2ff));
+  border: 1px solid #5296b8;
+  text-shadow: 1px 1px 1px #404040;
+  cursor: pointer;
+}
+
+.cell {
+  position: relative;
+  width: calc(11.1vmin - 2px);
+  height: calc(11.1vmin - 2px);
+  color: white;
+  text-align: center;
+  border-style: solid;
+  line-height: calc(11.1vmin - 2px);
+  border-width: 1px;
+  border-color: white;
+  border-radius: calc((11.1vmin - 2px)/7);
+  text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+}
+
+.fixedcell {
+  position: relative;
+  width: calc(11.1vmin - 2px);
+  height: calc(11.1vmin - 2px);
+  color: white;
+  text-align: center;
+  border-style: solid;
+  line-height: calc(11.1vmin - 2px);
+  border-width: 1px;
+  border-color: white;
+  text-shadow: 1px 1px 1px #FFF;
+}
+
+.wdays {
+  font-weight: bold;
+  background-color: #FFF385;
+  color: black;
+}
+
+.col {
+  float: left;
+}
+
+.weekheaders {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.wd {
+  float: left;
+  background-color: #FFF385;
+  color: black;
+  font-weight: bold;
+}
+
+.days {
+  position: absolute;
+  top: calc(11.1vmin);
+  left: 2px;
+}
+
+.months {
+  position: absolute;
+  top: calc(11.1vmin*8);
+  left: 2px;
+}
+
+.mo {
+  float: left;
+  background-color: #FFF385;
+  color: black;
+  font-weight: bold;
+}
+
+.jan {
+  background-color: #ACE2F5;
+}
+
+.feb {
+  background-color: #67D2F7;
+}
+
+.mar {
+  background-color: #C0DA78;
+}
+
+.apr {
+  background-color: #79E261;
+}
+
+.may {
+  background-color: #17C137;
+}
+
+.jun {
+  background-color: #F1B349;
+}
+
+.jul {
+  background-color: #EACB19;
+}
+
+.aug {
+  background-color: #F39161;
+}
+
+.sep {
+  background-color: #9EB41E;
+}
+
+.oct {
+  background-color: #D66810;
+}
+
+.nov {
+  background-color: #DA9319;
+}
+
+.dec {
+  background-color: #6676F7;
+}
+
+.prevYear {
+  background-color: grey;
+}
+
+.passed {
+  background-color: #E1E1E1;
+  color: black;
+}
+
+.selected {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.moWidth_4 {
+  width: calc(11.1vmin*4 - 2px);
+}
+
+.moWidth_5 {
+  width: calc(11.1vmin*5 - 2px);
+}
+
+.envelope {
+  position: absolute;
+  width: calc((11.1vmin - 2px)/7);
+  height: calc((11.1vmin - 2px)/7);
+  right: 2px;
+  top: 2px;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  border-radius: 3px;
+  border-style: solid;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#47ED8B), to(#FFFFFF));
+}
+
+/*ISCROLL STYLING*/
+#wrapper {
+  width: 100%;
+  height: 100%;
+  left: calc(11.1vmin - 2px);
+  position: absolute;
+  z-index: 1;
+}
+
+#scroller {
+  width: calc(11.1vmin*54);
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=iCalendar.css.map */

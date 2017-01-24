@@ -1,0 +1,48 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="iCalendar.css">
+	<script type="text/javascript" src="iscroll.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="fastclick.js"></script>	
+	<script type="text/javascript" src="iCalendar.js"></script>
+</head>
+<body>
+	<div id='app'>
+		<div id='details'>
+			<div class='header'>
+				<div class='centeredTextContainer'>
+					<div id='moDetails' class='centeredText'>Select a day</div>
+				</div>
+			</div>
+			<div class='comments'>
+				<textarea id='comment' placeholder="add message text ..."></textarea>
+			</div>
+			<div class='footer'>
+				<div id="saveButton" class='button'>Save Changes</div>
+			</div>
+		</div>
+		<div id='calendar'>
+			<div class='col'>
+				<div id='day-0' class='fixedcell wdays'></div>
+				<div id='day-1' class='fixedcell wdays'>MON</div>
+				<div id='day-2' class='fixedcell wdays'>TUE</div>
+				<div id='day-3' class='fixedcell wdays'>WED</div>
+				<div id='day-4' class='fixedcell wdays'>THU</div>
+				<div id='day-5' class='fixedcell wdays'>FRI</div>
+				<div id='day-6' class='fixedcell wdays'>SAT</div>
+				<div id='day-7' class='fixedcell wdays'>SUN</div>
+				<div id='day-8' class='fixedcell wdays'></div>
+			</div><div id='wrapper'>
+				<div id='scroller'>
+					<ul>
+						<div class='weekheaders'></div>
+						<div id='days' class='days'></div>
+						<div class='months'></div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
